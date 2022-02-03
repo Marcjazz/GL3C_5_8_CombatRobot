@@ -8,5 +8,7 @@ class ArenaTest {
 
     @org.junit.jupiter.api.Test
     void fight() {
+        ar.fight(rb1, rb2);
+        assertTrue((rb1.getLifePoints()==0) || (rb2.getLifePoints()==0));
     }
 }
