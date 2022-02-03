@@ -11,7 +11,15 @@ class RobotTest {
     }
 
     @org.junit.jupiter.api.Test
-    void isDead() {
+    void TestIsDead() {
+        robot1.fire(robot2);
+        robot1.fire(robot2);
+        robot1.fire(robot2);
+        robot1.fire(robot2);
+        robot1.fire(robot2);
+
+        assertFalse(robot1.TestIsDead());
+        assertTrue(robot2.TestIsDead());
     }
 
     @org.junit.jupiter.api.Test
