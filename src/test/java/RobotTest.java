@@ -16,5 +16,7 @@ class RobotTest {
 
     @org.junit.jupiter.api.Test
     void getRobotName() {
+        Robot robot = new Robot("D2R2");
+        assertEquals("Robot D2R2", robot.getRobotName());
     }
 }
