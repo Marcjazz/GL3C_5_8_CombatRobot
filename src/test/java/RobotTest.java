@@ -9,7 +9,7 @@ class RobotTest {
     @org.junit.jupiter.api.Test
     void fire() {
     }
-
+ //test sur la mort du robot
     @org.junit.jupiter.api.Test
     void TestIsDead() {
         robot1.fire(robot2);
@@ -17,7 +17,7 @@ class RobotTest {
         robot1.fire(robot2);
         robot1.fire(robot2);
         robot1.fire(robot2);
-
+        
         assertFalse(robot1.TestIsDead());
         assertTrue(robot2.TestIsDead());
     }
