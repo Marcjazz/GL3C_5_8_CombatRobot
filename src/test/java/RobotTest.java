@@ -8,6 +8,8 @@ class RobotTest {
 
     @org.junit.jupiter.api.Test
     void fire() {
+        robot1.fire(robot2);
+        assertEquals(8, robot2.getLifePoints());
     }
  //test sur la mort du robot
     @org.junit.jupiter.api.Test
